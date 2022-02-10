@@ -1,0 +1,77 @@
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: var(--box_radius);
+  position: relative;
+  overflow: hidden;
+  font-family: var(--font);
+  width: fit-content;
+  text-decoration: none;
+  color: var(--text_color);
+
+  &--success {
+    background-color: var(--accent_color);
+    color: white;
+  }
+
+  &--danger {
+    background-color: var(--red);
+    color: white;
+  }
+
+  &--default {
+    background-color: var(--bg-white);
+  }
+
+  &--full {
+    width: 100%;
+  }
+
+  &--small {
+    height: var(--widget_height);
+    padding: 5px 15px;
+    font-size: 14px;
+    @include border(true, true, true, true);
+  }
+
+  &--medium {
+    height: var(--widget_m_height);
+    padding: 5px 15px;
+    font-size: 14px;
+    @include border(true, true, true, true);
+  }
+
+  &--icon {
+    svg {
+      font-size: 18px;
+      margin-right: 5px;
+    }
+  }
+
+  span {
+    font-weight: 600;
+    color: var(--text_color);
+    font-size: 14px;
+    position: relative;
+  }
+  &:hover {
+    &::before {
+      clip-path: circle(200% at 0 0);
+    }
+  }
+  &::before {
+    background-color: var(--primary_color);
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(0 at 0 center);
+    transition: clip-path 0.6s ease;
+    opacity: 0.03;
+    background-color: var(--text_color);
+  }
+}

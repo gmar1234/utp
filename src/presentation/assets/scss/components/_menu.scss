@@ -1,0 +1,11 @@
+.gm-menu {
+  display: flex;
+  justify-content: space-between;
+  ul {
+    flex: 1;
+    &:last-child() {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

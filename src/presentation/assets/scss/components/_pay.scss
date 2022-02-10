@@ -1,0 +1,101 @@
+.gm-pay {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  height: calc(100vh - 70px);
+  grid-gap: 10px;
+  @include respond(tab-port) {
+    padding: 0 40px;
+    grid-template-columns: 1fr;
+  }
+
+  &__action {
+    padding: 0 20px;
+    background-color: white;
+    @include respond(tab-port) {
+      padding: 0;
+    }
+  }
+
+  &__blockquote {
+    margin-top: 10px;
+    border: 2px dashed $primary;
+    background-color: $primary-ligth;
+    color: $primary;
+    text-align: center;
+    padding: 20px 0;
+    p {
+      margin: 0;
+    }
+  }
+
+  &__form {
+    margin-top: 20px;
+    user-select: none;
+    @include respond(tab-port) {
+      margin-bottom: 20px;
+    }
+    .group {
+      margin-bottom: 15px;
+      label {
+        font-weight: 500;
+      }
+      input {
+        width: 100%;
+        outline: none;
+        height: 50px;
+        margin-top: 5px;
+        border: none;
+        padding: 10px;
+        color: #9f9f9f;
+        user-select: none;
+        border: 1px solid var(--border_color_dark);
+        border-radius: var(--box_radius);
+      }
+    }
+  }
+
+  &__button {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+    button {
+      padding: 15px;
+      color: $primary;
+      border: 1px solid $primary;
+      font-size: 12px;
+      font-weight: bold;
+      flex: 1;
+      text-align: center;
+      transition: all 0.3s;
+      cursor: pointer;
+      background-color: #f5f7fa;
+      &:hover {
+        background-color: whitesmoke;
+      }
+      &:not(:last-child) {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .hr {
+    width: 100%;
+    background-color: #e7eff7;
+    margin: 10px 0;
+    height: 2px;
+    border: none;
+  }
+
+  &__previous {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 15px 0;
+    color: $white;
+    border: none;
+    background-color: $primary;
+    cursor: pointer;
+    line-height: 0;
+    height: 50px;
+  }
+}

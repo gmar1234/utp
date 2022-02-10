@@ -1,0 +1,25 @@
+.gm-cart {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  &__header {
+    border: 1px solid var(--border_color_dark);
+    display: flex;
+    padding: 10px;
+  }
+
+  &__left {
+    flex: 1;
+  }
+  &__rigth {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+
+  &__grid {
+    flex: 1;
+  }
+}

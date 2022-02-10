@@ -1,0 +1,40 @@
+$primary: #1890ff;
+$primary-ligth: #1890ff1a;
+$blue: #066aa8;
+$white: #ffffff;
+$smoke: #f5f7fa;
+// $smoke: #f7f7f7;
+$gray: #c3c3c3;
+$width: 1200px;
+$min-width: 200px;
+$padding-content: 30px;
+
+:root {
+  --box_radius: 6px;
+  --font: "Roboto", "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --border_color_dark: #e4e4e4;
+  --text_color: #000000;
+  --border_color: #f3f0f0;
+  --hover_color: #f8f8fb;
+  --bg-white: #ffffff;
+  --width-sidebar: 90px;
+  --width-sidebar-phone: 50px;
+  --accent_color: #1890ff;
+  --accent_color_dark: #1ec67e;
+  --accent_color_solid: #e8f9f2;
+  --accent_color_light: #17de8b1f;
+  --widget_height: 32px;
+  --widget_m_height: 50px;
+  --primary_color: #030047;
+  --text_color: #000000;
+  --primary_accent_color: #030047;
+  --box_padding: 15px;
+  --shadow: 0 0 16px 4px rgba(0, 0, 0, 0.05);
+  --neutral_light_color: #ffffff;
+  --neutral_color_dark: #ffffff;
+  --modal_width: 500px;
+  --box_padding: 25px;
+  --nav_height: 55px;
+  --nav_height1: $heigth-data;
+  --red: #c85c5c;
+}
